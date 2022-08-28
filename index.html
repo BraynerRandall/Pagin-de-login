@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./index.css">
+    <title>Sistema de Recados</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container cadastro-container">
+            <form id="formulario-cadastro">
+                <h1>CRIAR UMA CONTA NOVA!</h1>
+                <span>Use um email para se registrar.</span>
+                <input type="text" placeholder="Nome" id="input-cadastro-nome" />
+                <input type="email" placeholder="E-mail" id="input-cadastro-email" />
+                <input type="password" placeholder="Senha" id="input-cadastro-senha" />
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+        <div class="form-container login-container">
+            <form id="formulario-login">
+                <h1>ENTRE</h1>
+                <span>ou use uma conta existente</span>
+                <input type="email" placeholder="E-mail" id="input-login-email" required />
+                <input type="password" placeholder="Senha" id="input-login-senha" required />
+                <a href="#">Esqueceu a senha? </a>
+                <button type="submit">ENTRAR</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <button class="btn-animacao" id="signIn">Acessar minha conta!!</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>EAE AMIGO !</h1>
+                    <p>Insira seus dados pessoais e comece a jornada com a gente. </p>
+                    <button class="btn-animacao" id="signUp">SE INSCREVER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
